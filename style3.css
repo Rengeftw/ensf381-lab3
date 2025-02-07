@@ -12,9 +12,53 @@
     border: 1px solid darkblue;
     text-align: center;
 }
+
 .item img {
     width: 100px;
     height: 100px;
     display: block;
     margin: 0 auto 10px;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: #333;
+    gap: 20px;
+    padding: 15px 10px 15px 10px;
+}
+
+.nav-item {
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar .nav-item:hover {
+    background-color: #bdbbbb;
+}
+
+.nav-bar .nav-item:hover .dropdown {
+    display: block;
+}
+
+.nav-item .dropdown {
+    display: none;
+    min-width: 100px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+}
+
+.dropdown .dropdown-item {
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.dropdown .dropdown-item:hover {
+    background-color: lightgrey;
 }
