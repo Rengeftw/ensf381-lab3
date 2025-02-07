@@ -38,6 +38,10 @@ p {
 
 .td_image_width {
     width:570px;
+}
+
+.td_image_width img {
+    width:570px;
     height: 400px;
     display: block;
 }
