@@ -5,7 +5,6 @@
  
 .item {
     flex: 1;
-
     padding: 20px;
     margin: 5px;
     background-color: lightblue;
@@ -24,6 +23,7 @@
     display: flex;
     background-color: #333;
     padding: 20px 10px 20px 10px;
+    gap: 20px;
 }
 
 .nav-item {
@@ -32,13 +32,13 @@
     position: relative;
 }
 
+.nav-bar .nav-item:hover {
+    background-color: #bdbbbb;
+}
+
 .nav-item a {
     text-decoration: none;
     color: white;
-}
-
-.nav-bar .nav-item:hover {
-    background-color: #bdbbbb;
 }
 
 .nav-bar .nav-item:hover .dropdown {
@@ -50,10 +50,11 @@
     min-width: 150px;
     background-color: white;
     position: absolute;
+    left: 0;
     top: 100%;
 }
 
-.dropdown .dropdown-item {
+.dropdown-item {
     border-bottom: 1px solid lightgrey;
     padding: 10px;
 }
